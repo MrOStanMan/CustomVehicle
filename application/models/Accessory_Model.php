@@ -14,6 +14,7 @@
 require_once 'AccessoryEntity.php';
 class Accessory_Model extends CSV_Model {
     //put your code here
+        
         function __construct()
 	{
             parent::__construct('../data/Accessory.csv', 'AccessoryId', 'AccessoryEntity');

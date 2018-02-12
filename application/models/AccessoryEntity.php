@@ -11,15 +11,63 @@
  *
  * @author Lucas
  */
-require_once 'CategoryEntity.php';
-class AccessoryEntity extends CategoryEntity{
-    public $accessoryId;
-    public $description;
-    public $categoryId;
+class AccessoryEntity{ 
+    public $AccessoryId;
+    public $Description;
+    public $CategoryId;
+    public $Cost;
+    public $Popularity;
+    public $Quality;
+    
+    
+    public  function getAccessoryId() {
+        return $this->AccessoryId;
+    }
+
+    public function getDescription() {
+        return $this->Description;
+    }
+
+    public function getCategory() {
+        return $this->CategoryId;
+    }
+
+    public function getCost() {
+        return $this->Cost;
+    }
+
+    public function getPopularity() {
+        return $this->Popularity;
+    }
+
+    public function getQuality() {
+        return $this->Quality;
+    }
+
+    public function setAccessoryId($accessoryId) {
+        $this->AccessoryId = $accessoryId;
+    }
+
+    public function setDescription($description) {
+        $this->Description = $description;
+    }
+
+    public function setCategory($category) {
+        $this->CategoryId = $category;
+    }
+
+    public function setCost($cost) {
+        $this->Cost = $cost;
+    }
+
+    public function setPopularity($popularity) {
+        $this->Popularity = $popularity;
+    }
+
+    public function setQuality($quality) {
+        $this->Quality = $quality;
+    }
 
 
-    //put your code here
-      function __construct(){
-          parent::__construct();
-      }
+
 }
