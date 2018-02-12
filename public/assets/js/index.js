@@ -29,11 +29,11 @@ $(document).ready(function () {
         $("#option").change(function(event) {
             empty = true;
             selected = $('#option').val();
-             if (selected == "car1") {
+             if (selected === "car1") {
                  console.log(selected);
                  optionSelected = 0;
                  checkLoaded();
-             } else if (selected == "car2") {
+             } else if (selected === "car2") {
                  console.log(selected);
                  optionSelected = 1;
                  checkLoaded();
@@ -76,7 +76,7 @@ $(document).ready(function () {
             for (var i = 0; i < images.length; i++) {
                 images[i].onload = function() {
                     imageCount++;
-                    if (imageCount == images.length && empty) {
+                    if (imageCount === images.length && empty) {
                         drawPhotos();
                     }
                 };
